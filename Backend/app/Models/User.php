@@ -14,7 +14,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends /*Eloquent implements */ Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-    use AuthenticatableTrait;
+
 
     protected $connection = 'mongodb';
 
