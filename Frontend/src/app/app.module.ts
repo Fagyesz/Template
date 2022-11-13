@@ -6,10 +6,6 @@ import {HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,20 +20,38 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DragDropComponent } from './common/drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { SidebarComponent } from './common/sidebar/sidebar.component';
+import { NavbarComponent } from './common/navbar/navbar.component';
+import { HeaderComponent } from './common/header/header.component';
+import { FooterComponent } from './common/footer/footer.component';
+import { HomeComponent } from './page/home/home.component';
+import { LoginComponent } from './page/login/login.component';
+import { RegisterComponent } from './page/register/register.component';
+import { ErrorComponent } from './page/error/error.component';
+import { ProfileComponent } from './page/profile/profile.component';
+import { ContactComponent } from './page/contact/contact.component';
+import { AboutComponent } from './page/about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticlesComponent,
-    FooterComponent,
-    HeaderComponent,
-    HomeComponent,
-    NavbarComponent,
     FormInputComponent,
     ButtonComponent,
     Table1Component,
-    DragDropComponent
+    DragDropComponent,
+    SidebarComponent,
+    NavbarComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
+    ErrorComponent,
+    ProfileComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
