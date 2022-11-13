@@ -53,3 +53,7 @@ a:hover {
 .footer-text {
   font-weight: initial;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(12, 11, 11) !important;;
+  opacity: 0.6; /* Firefox */
+}
