@@ -8,18 +8,18 @@ use('db');
 
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
-//db.articles.drop();
+db.articles.drop();
 
 // Insert a few documents into the sales collection.
 db.articles.insertMany([
-  { 'title': '3', 'body': 10, 'author': 2, 'created_at': new Date('2014-03-01T08:00:00Z') },
-  { 'title': '2', 'body': 20, 'author': 1, 'created_at': new Date('2014-03-01T09:00:00Z') },
-  { 'title': '4', 'body': 5, 'author': 10, 'created_at': new Date('2014-03-15T09:00:00Z') },
-  { 'title': '5', 'body': 5, 'author':  20, 'created_at': new Date('2014-04-04T11:21:39.736Z') },
-  { 'title': 'abc', 'body': 10, 'author': 10, 'created_at': new Date('2014-04-04T21:23:13.331Z') },
-  { 'title': 'def', 'body': 7.5, 'author': 5, 'created_at': new Date('2015-06-04T05:08:13Z') },
-  { 'title': 'def', 'body': 7.5, 'author': 10, 'created_at': new Date('2015-09-10T08:43:00Z') },
-  { 'title': 'abc', 'body': 10, 'author': 5, 'created_at': new Date('2016-02-06T20:20:13Z') },
+  { 'title': '3', 'content': 10, 'author': 2, 'created_at': new Date('2014-03-01T08:00:00Z') },
+  { 'title': '2', 'content': 20, 'author': 1, 'created_at': new Date('2014-03-01T09:00:00Z') },
+  { 'title': '4', 'content': 5, 'author': 10, 'created_at': new Date('2014-03-15T09:00:00Z') },
+  { 'title': '5', 'content': 5, 'author':  20, 'created_at': new Date('2014-04-04T11:21:39.736Z') },
+  { 'title': 'abcs', 'content': 10, 'author': 10, 'created_at': new Date('2014-04-04T21:23:13.331Z') },
+  { 'title': 'def', 'content': 7.5, 'author': 5, 'created_at': new Date('2015-06-04T05:08:13Z') },
+  { 'title': 'asdw', 'content': 7.5, 'author': 10, 'created_at': new Date('2015-09-10T08:43:00Z') },
+  { 'title': 'abcss', 'content': 10, 'author': 5, 'created_at': new Date('2016-02-06T20:20:13Z') },
 ]);
 
 // Run a find command to view items sold on April 4th, 2014.

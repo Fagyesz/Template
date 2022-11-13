@@ -1,0 +1,96 @@
+$backgroundLightBlue: #2c86b0;
+$backgroundBlue: #082944;
+$colorWhite: #fff;
+$colorBlack: #000000;
+$colorDelete: #790505fb;
+$colorEdit: #1234577c;
+$PostBorderTimeline: #08C1DA;
+$registerLoginBasicColor:#d7dcdf;
+
+input {
+  background: #032043;
+}
+
+:root {
+  /** delete **/
+  ---color-delete: #790505;
+  ---color-delete-rgb: 125,5,5;
+  ---color-delete-contrast: #ffffff;
+  ---color-delete-contrast-rgb: 255,255,255;
+  ---color-delete-shade: #6e0404;
+  ---color-delete-tint: #8a1e1e;
+  /** edit **/
+  ---color-edit: #123457;
+  ---color-edit-rgb: 18,52,87;
+  ---color-edit-contrast: #ffffff;
+  ---color-edit-contrast-rgb: 255,255,255;
+  ---color-edit-shade: #102e4d;
+  ---color-edit-tint: #2a4868;
+  /** button **/
+  ---color-button: #2c86b0;
+  ---color-button-rgb: 44,134,176;
+  ---color-button-contrast: #ffffff;
+  ---color-button-contrast-rgb: 255,255,255;
+  ---color-button-shade: #27769b;
+  ---color-button-tint: #4192b8;
+  /** checkbox **/
+  ---color-checkbox: #d7dcdf;
+  ---color-checkbox-rgb: 215,220,223;
+  ---color-checkbox-contrast: #000000;
+  ---color-checkbox-contrast-rgb: 0,0,0;
+  ---color-checkbox-shade: #bdc2c4;
+  ---color-checkbox-tint: #dbe0e2;
+  /** back **/
+  ---color-back: #082944;
+  ---color-back-rgb: 8,41,68;
+  ---color-back-contrast: #ffffff;
+  ---color-back-contrast-rgb: 255,255,255;
+  ---color-back-shade: #07243c;
+  ---color-back-tint: #213e57;
+
+}
+
+.-color-delete {
+  ---color-base: var(---color-delete);
+  ---color-base-rgb: var(---color-delete-rgb);
+  ---color-contrast: var(---color-delete-contrast);
+  ---color-contrast-rgb: var(---color-delete-contrast-rgb);
+  ---color-shade: var(---color-delete-shade);
+  ---color-tint: var(---color-delete-tint);
+}
+
+.-color-edit {
+  ---color-base: var(---color-edit);
+  ---color-base-rgb: var(---color-edit-rgb);
+  ---color-contrast: var(---color-edit-contrast);
+  ---color-contrast-rgb: var(---color-edit-contrast-rgb);
+  ---color-shade: var(---color-edit-shade);
+  ---color-tint: var(---color-edit-tint);
+}
+
+.-color-button {
+  ---color-base: var(---color-button);
+  ---color-base-rgb: var(---color-button-rgb);
+  ---color-contrast: var(---color-button-contrast);
+  ---color-contrast-rgb: var(---color-button-contrast-rgb);
+  ---color-shade: var(---color-button-shade);
+  ---color-tint: var(---color-button-tint);
+}
+
+.-color-checkbox {
+  ---color-base: var(---color-checkbox);
+  ---color-base-rgb: var(---color-checkbox-rgb);
+  ---color-contrast: var(---color-checkbox-contrast);
+  ---color-contrast-rgb: var(---color-checkbox-contrast-rgb);
+  ---color-shade: var(---color-checkbox-shade);
+  ---color-tint: var(---color-checkbox-tint);
+}
+
+.-color-back {
+  ---color-base: var(---color-back);
+  ---color-base-rgb: var(---color-back-rgb);
+  ---color-contrast: var(---color-back-contrast);
+  ---color-contrast-rgb: var(---color-back-contrast-rgb);
+  ---color-shade: var(---color-back-shade);
+  ---color-tint: var(---color-back-tint);
+}
