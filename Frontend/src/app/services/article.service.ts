@@ -12,4 +12,8 @@ export class ArticleService {
   listArticles(){
     return this.http.get(`${this.url}/api/articles`);
   }
+  getArticle(){
+    return this.http.get(`${this.url}/api/article`);
+  }
+
 }

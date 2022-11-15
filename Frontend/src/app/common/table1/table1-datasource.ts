@@ -3,12 +3,23 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
-
+import { ArticleService } from 'src/app/services/article.service';
 // TODO: Replace this with your own data model type
 export interface Table1Item {
   name: string;
   id: number;
+
 }
+export interface TableArticleItem {
+  name: string;
+  id: number;
+  title: string;
+  body: string;
+  content:string;
+  author: string;
+  created_at: string;
+  updated_at: string;
+  image: string;}
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: Table1Item[] = [
@@ -33,6 +44,9 @@ const EXAMPLE_DATA: Table1Item[] = [
   {id: 19, name: 'Potassium'},
   {id: 20, name: 'Calcium'},
 ];
+
+
+
 
 /**
  * Data source for the Table1 view. This class should

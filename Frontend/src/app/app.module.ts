@@ -31,6 +31,7 @@ import { ErrorComponent } from './page/error/error.component';
 import { ProfileComponent } from './page/profile/profile.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { AboutComponent } from './page/about/about.component';
+import { ArticleShowComponent } from './page/article/article-show/article-show.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { AboutComponent } from './page/about/about.component';
     ErrorComponent,
     ProfileComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    ArticleShowComponent
   ],
   imports: [
     BrowserModule,

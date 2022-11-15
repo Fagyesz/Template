@@ -14,12 +14,12 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    
 
-    public function index()
+    public function GetAllArticles()
     {
-       return Article::all();
+        return Article::all();
     }
+
 
     /**
      * Store a newly created resource in storage.
