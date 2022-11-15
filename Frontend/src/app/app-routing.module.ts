@@ -15,7 +15,8 @@ import { AboutComponent } from './page/about/about.component';
 const routes: Routes = [
 {
   path: '',
-  component: HomeComponent
+  component: HomeComponent,
+  pathMatch: 'full'
 },
 {
   path: 'login',
@@ -38,9 +39,13 @@ const routes: Routes = [
   component: AboutComponent
 },
 {
+  path:'users',
+  loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
+},
+{
   path: '**',
   component: ErrorComponent
-}
+},
 ];
 
 

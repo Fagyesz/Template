@@ -19,7 +19,9 @@ use App\Http\Resources\ArticleResource;
 
 
 
-Route::get('/articles', [ArticleController::class, 'index']);
+Route::get('/articles', function () {
+    return ArticleResource::collection(Article::all());
+});
 Route::get('/articles/{id}', [ArticleController::class, 'show']);
 Route::post('/articles', [ArticleController::class, 'store']);
 Route::put('/articles/{id}', [ArticleController::class, 'update']);
