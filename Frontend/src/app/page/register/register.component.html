@@ -23,10 +23,10 @@
             <div class="box">
               <p class="subtitle is-4">Please Register to proceed.</p>
               <br />
-              <form>
+              <form (submit)="onSubmit()">
                 <div class="field">
                   <p class="control has-icons-left has-icons-right">
-                    <input class="input is-medium" type="email" placeholder="Email" />
+                    <input class="input is-medium" type="email" id="email" [(ngModel)]="email" name="email" placeholder="Email" />
                     <span class="icon is-medium is-left">
                       <i class="fas fa-envelope"></i>
                     </span>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="field">
                   <p class="control has-icons-left">
-                    <input class="input is-medium" type="password" placeholder="Password" id="password" required/>
+                    <input class="input is-medium" type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" id="password" required/>
                     <span class="icon is-small is-left">
                       <i class="fas fa-lock"></i>
                     </span>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="field">
                   <p class="control has-icons-left">
-                    <input class="input is-medium" type="password" placeholder="Confirm Password" id="confirm_password" required/>
+                    <input class="input is-medium" type="password" id="passwordConfirmation" [(ngModel)]="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm Password"  required/>
                     <span class="icon is-small is-left">
                       <i class="fas fa-lock"></i>
                     </span>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="field">
                   <label class="checkbox">
-                    <input type="checkbox" />
+                    <input type="checkbox" [(ngModel)]="acceptsReadMe" />
                     Remember me
                   </label>
                 </div>
@@ -81,7 +81,7 @@
               </form>
             </div>
             <p class="has-text-grey">
-              <a href="#">Sign in</a> &nbsp;·&nbsp; <a href="#">Forgot Password</a> &nbsp;·&nbsp;
+               <button (click)="register()" [disabled]="waitingForResponse">Sign in</button> &nbsp;·&nbsp; <a href="#">Forgot Password</a> &nbsp;·&nbsp;
               <a href="#">Need Help?</a>
             </p><!-- languages extend -->
             <!-- <div class="languages select is-small is-rounded">

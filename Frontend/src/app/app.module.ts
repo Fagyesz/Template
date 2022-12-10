@@ -32,7 +32,8 @@ import { ProfileComponent } from './page/profile/profile.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { AboutComponent } from './page/about/about.component';
 import { ArticleShowComponent } from './page/article/article-show/article-show.component';
-
+import { ArticleTableComponent } from './page/article/article-table/article-table.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ArticleShowComponent } from './page/article/article-show/article-show.c
     ProfileComponent,
     ContactComponent,
     AboutComponent,
-    ArticleShowComponent
+    ArticleShowComponent,
+    ArticleTableComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,8 @@ import { ArticleShowComponent } from './page/article/article-show/article-show.c
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
