@@ -1,18 +1,22 @@
-<!--
-<div class="container is-fluid is-fullheight" id="main">
-
-  <div class="columns is-gapless is-fullheight">
-    <div class="column is-2 is-fullheight is-hidden-mobile">
-
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="user">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+        <button class="btn btn-link nav-item nav-link" (click)="logout()">Logout</button>
     </div>
-    <div class="column is-10 is-fullheight">
+</nav>
 
-    </div>
-  </div>
-</div> -->
-<app-navbar></app-navbar>
+<!-- main app container -->
+<div class="app-container" [ngClass]="{ 'bg-light': user }">
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
 
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-
-
+<!-- credits -->
+<div class="text-center mt-4">
+    <p>
+        <!-- <a href="" target="_top">Angular-Spring  Beadandó</a> -->
+    </p>
+    
+</div>
